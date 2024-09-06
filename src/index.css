@@ -5,7 +5,6 @@
   --sub-text:#41250C;
   --sub-text-darker:#2b1705;
   --timing:cubic-bezier(.72,-0.01,.24,1.02);
-  height:4500px;
 }
 header {
   display:flex;

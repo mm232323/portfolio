@@ -79,7 +79,7 @@ function App() {
                   opportunities, please feel free to reach out to me at your
                   convenience.
                 </motion.p>
-                <motion.img src="/aboutPic.png" />
+                <img src="/aboutPic.png" alt="about img" />
               </motion.div>
             </>
           )}
@@ -147,7 +147,7 @@ function App() {
         )}
       </AnimatePresence>
       <center>
-        <div className="footer">
+        <div className="footer" style={{ top: scrollY < 3500 ? 665 : 40 }}>
           <p>by: Mohammed Qurany Ibrahim</p>
         </div>
       </center>

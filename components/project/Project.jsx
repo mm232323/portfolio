@@ -24,6 +24,7 @@ export default function Project({ project, id }) {
         initial="hide"
         animate="show"
         exit="hide"
+        alt="project img"
       />
       <div className={styles.details}>
         <motion.h1
