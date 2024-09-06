@@ -1,0 +1,20 @@
+[
+  {
+    "name": "The Magzarati",
+    "img": "/project1.png",
+    "links": {
+      "live": "https://butchery-shop.vercel.app",
+      "repo1": "https://github.com/mm232323/buchery-shop",
+      "repo2": "https://github.com/mm232323/buchery-shop-api"
+    }
+  },
+  {
+    "name": "Posterizer",
+    "img": "/project2.png",
+    "links": {
+      "live": "https://posterizer-one.vercel.app",
+      "repo1": "https://github.com/mm232323/Posterizer",
+      "repo2": "https://github.com/mm232323/Posterizer-api"
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "HTML",
+    "color": "#E44D25",
+    "img": "/html.png"
+  },
+  {
+    "name": "CSS",
+    "color": "#2196F3",
+    "img": "/css.png"
+  },
+  {
+    "name": "JAVASCRIPT",
+    "color": "#FFDF00",
+    "img": "/js.png"
+  },
+  {
+    "name": "TYPESCRIPT",
+    "color": "#3178C6",
+    "img": "/ts.png"
+  },
+  {
+    "name": "REACT",
+    "color": "#00D8FE",
+    "img": "/react.png"
+  },
+  {
+    "name": "NEXTJS",
+    "color": "black",
+    "img": "/next.png"
+  },
+  {
+    "name": "NODEJS",
+    "color": "#83CD29",
+    "img": "/nodejs.png"
+  },
+  {
+    "name": "EXPRESS",
+    "color": "black",
+    "img": "/express.png"
+  },
+  {
+    "name": "REACTQUERY",
+    "color": "#FF4254",
+    "img": "/react-query.png"
+  },
+  {
+    "name": "TAILWIND",
+    "color": "#14C3B8",
+    "img": "tailwind.png"
+  },
+  {
+    "name": "MONGODB",
+    "color": "#51B340",
+    "img": "mongodb.png"
+  },
+  {
+    "name": "MYSQL",
+    "color": "#5382A1",
+    "img": "mysql.png"
+  }
+]

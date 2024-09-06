@@ -1,0 +1,30 @@
+.linkbox {
+ border:1px #250F03 dotted;
+ height:120px;
+ padding-left:10px;
+ border-radius:5px;
+}
+.linkbox h3 {
+ font-weight:300;
+ font-size:28px;
+ color:#3A1E04;
+ position:relative;
+ top:-10px;
+}
+.linkbox p {
+ font-weight:200;
+ font-size:22px;
+ color:#144162;
+ transition-duration:.4s;
+ transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ cursor:pointer;
+ width:470px;
+ position:relative;
+ top:-30px;
+}
+a {
+ text-decoration: none;
+}
+.linkbox p:hover {
+ color:#144162b2;
+}
