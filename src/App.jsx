@@ -1,12 +1,23 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import skills from "../data/skills.json";
 import projects from "../data/work.json";
 import Skill from "../components/skill/Skill";
 import Project from "../components/project/Project";
+import Lenis from "lenis";
 function App() {
   const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   document.onscroll = () => {
     setScrollY(window.scrollY);
     console.log(scrollY);
@@ -88,15 +99,11 @@ function App() {
             />
           )}
         </AnimatePresence>
-        <AnimatePresence>
-          {scrollY >= 1180 && (
-            <div className="container">
-              {skills.map((skill, idx) => (
-                <Skill key={skill.name} skill={skill} id={idx} />
-              ))}
-            </div>
-          )}
-        </AnimatePresence>
+        <div className="container">
+          {skills.map((skill, idx) => (
+            <Skill key={skill.name} scrollY={scrollY} skill={skill} id={idx} />
+          ))}
+        </div>
       </section>
       <section className="work" style={{ height: 50 + projects.length * 700 }}>
         <h1 className="title">Work</h1>
