@@ -186,7 +186,9 @@ function App() {
           height:
             pageWidth > 965
               ? 50 + projects.length * 700
-              : 50 + projects.length * 1030,
+              : pageWidth > 550
+              ? 50 + projects.length * 1030
+              : 30 + projects.length * 760,
         }}
       >
         <h1 className="title">Work</h1>
