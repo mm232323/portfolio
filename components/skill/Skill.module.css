@@ -30,3 +30,24 @@
 .leftskill img {
  transform:scale(.5)
 }
+@media (max-width:900px) {
+  .rightskill,
+  .leftskill{
+    width:300px !important;
+  }
+  .rightskill h1,
+  .leftskill h1 {
+    font-size:40px;
+  }
+}
+@media (max-width:750px) {
+  .rightskill h1,
+  .leftskill h1 {
+    display:none;
+  }
+  .rightskill,
+  .leftskill {
+    width: 70px !important;
+    justify-content: center;
+  }
+}

@@ -2,6 +2,7 @@
 import styles from "./LinkBox.module.css";
 import { motion } from "framer-motion";
 export default function LinkBox({ link, children, id }) {
+  const pageWidth = window.innerWidth;
   return (
     <motion.div
       className={styles.linkbox}
@@ -14,9 +15,9 @@ export default function LinkBox({ link, children, id }) {
       exit="hide"
       transition={{ delay: 0.1 * id }}
     >
-      <h3>{children}</h3>
       <a href={link} target="_blank">
-        <p>{link}</p>
+        <h3>{children}</h3>
+        {pageWidth > 550 && <p>{link}</p>}
       </a>
     </motion.div>
   );

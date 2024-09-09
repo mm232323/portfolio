@@ -28,3 +28,17 @@ a {
 .linkbox p:hover {
  color:#144162b2;
 }
+
+@media (max-width:550px) {
+ .linkbox {
+  height:50px;
+  width:fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+ }
+ .linkbox h3 {
+  top:0;
+ }
+}
